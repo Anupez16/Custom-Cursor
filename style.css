@@ -14,9 +14,7 @@ html,body{
     height: 100%;
     width: 100%;
     background: linear-gradient(to right, #232323, #3a3a3a, #525252);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .cursor{
@@ -29,7 +27,28 @@ html,body{
     transition: all 0.2s linear;
 }
 
-h1{
-    font-size: 9vw;
-    font-weight: 900;
+.elem{
+    height: 200px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
+
+.elem h1{
+    font-size: 6vw;
+    z-index: 0;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    opacity: 0;
+
+}
+
